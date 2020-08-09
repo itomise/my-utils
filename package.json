@@ -2,9 +2,7 @@
   "name": "static-site-webpack",
   "author": "Ryota Ito (https://github.com/itomise)",
   "scripts": {
-    "dev": "node ./server.js",
-    "build": "rimraf ./htdocs && webpack --config webpack.prod.js",
-    "dev-server": "webpack-dev-server --config webpack.dev.js"
+    "dev": "node ./server.js"
   },
   "license": "MIT",
   "dependencies": {
