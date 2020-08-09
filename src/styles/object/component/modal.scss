@@ -1,0 +1,104 @@
+.c-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s $ease-quart-out;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    .c-modal__bg {
+      opacity: .8;
+    }
+  }
+}
+.c-modal__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .8;
+  opacity: 0;
+  transition: all .5s $ease-quart-out;
+}
+.c-modal__contentWrap {
+  position: relative;
+}
+.c-modal__content {
+  @include mq(pc) {
+    width: 100%;
+    height: 100%;
+  }
+  @include mq(sp) {
+    width: 100vw;
+    height: 60.9vw;
+    max-width: 500px;
+    max-height: 60vh;
+  }
+}
+.c-modal__close {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  @include mq(pc) {
+    top: -79px;
+    right: -54px;
+    cursor: pointer;
+  }
+  @include mq(tab) {
+    top: -79px;
+    right: 0px;
+  }
+  @include mq(sp) {
+    top: -79px;
+    right: 0px;
+  }
+}
+.c-modal__closeInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all .2s ease-in-out;
+  span {
+    position: absolute;
+    top: 22px;
+    left: 14px;
+    display: block;
+    width: 19px;
+    height: 2px;
+    background-color: black;
+    transition: background-color .2s ease-in-out, transform .7s $ease-circ-out;
+    &:nth-of-type(1) {
+      transform: rotate(45deg);
+    }
+    &:nth-of-type(2) {
+      transform: rotate(-45deg);
+    }
+  }
+  @include mq(pc) {
+    &:hover {
+      background-color: black;
+      span {
+        background-color: white;
+        &:nth-of-type(1) {
+          transform: rotate(45deg) scale(0.8);
+        }
+        &:nth-of-type(2) {
+          transform: rotate(-45deg) scale(0.8);
+        }
+      }
+    }
+  }
+}
+

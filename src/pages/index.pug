@@ -1,0 +1,18 @@
+extends ../pug_templates/layouts/layout
+include ../pug_templates/components/youtube
+
+block variables
+  -
+    var title = 'トップ';
+    var description = '説明';
+
+block page_css
+  link(rel='stylesheet', href= PUBLIC_URL + '/css/home.css')
+
+block content
+  p#test aa
+  .l-modal
+    +youtube('joy')
+
+block page_js
+  script(src= PUBLIC_URL + '/js/home.js')
