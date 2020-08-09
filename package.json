@@ -1,6 +1,7 @@
 {
-  "name": "static-site-webpack",
+  "name": "my-js-utils",
   "author": "Ryota Ito (https://github.com/itomise)",
+  "version": "0.0.1",
   "scripts": {
     "dev": "node ./server.js"
   },
@@ -51,6 +52,7 @@
   "engines": {
     "node": "12.x"
   },
+  "private": true,
   "browserslist": [
     "last 2 version",
     "IE 11"
