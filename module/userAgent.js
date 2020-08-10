@@ -37,7 +37,7 @@ class UserAgent {
       return 'tab'
     }
     if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
-      deviceType = 'sp'
+      return 'sp'
     }
     // iPad
     if (

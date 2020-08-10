@@ -31,13 +31,13 @@
   opacity: 0;
   transition: all .5s $ease-quart-out;
 }
-.c-modal__contentWrap {
+.c-modal__inner {
   position: relative;
 }
 .c-modal__content {
   @include mq(pc) {
-    width: 100%;
-    height: 100%;
+    width: 700px;
+    height: 426px;
   }
   @include mq(sp) {
     width: 100vw;

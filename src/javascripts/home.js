@@ -1,6 +1,6 @@
 import '../styles/home.scss'
-// import { onYouTubeIframeAPIReady } from './modules/youtube/youtube'
 import { stateInit } from './modules/state/state'
+import { YoutubeModal } from './modules/youtube'
 
 if (module.hot) {
   module.hot.accept(console.error)
@@ -11,10 +11,18 @@ if (module.hot) {
 
 const init = () => {
   stateInit()
-  // onYouTubeIframeAPIReady()
-  console.log('1')
+}
+
+const load = () => {
+  new YoutubeModal('5qap5aO4i9A', 'youtube01', '#modal01play')
+  new YoutubeModal('DWcJFNfaw9c', 'youtube02', '#modal02play')
+  new YoutubeModal('rQO8escJC78', 'youtube03', '#modal03play')
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   init()
+})
+
+window.addEventListener('load', () => {
+  load()
 })

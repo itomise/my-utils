@@ -1,0 +1,17 @@
+.p-youtube__title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.p-youtube__list {
+  display: flex;
+  padding: 20px 0 0;
+}
+.p-youtube__item {
+  margin: 0 20px;
+  background-color: #eeeeee;
+  padding: 10px 50px;
+  cursor: pointer;
+  &:first-child {
+    margin-left: 0;
+  }
+}

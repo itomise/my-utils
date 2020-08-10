@@ -10,9 +10,14 @@ block page_css
   link(rel='stylesheet', href= PUBLIC_URL + '/css/home.css')
 
 block content
-  p#test aa
+  .p-youtube
+    .p-youtube__title Youtube modal test
+    ul.p-youtube__list
+      li#modal01play.p-youtube__item 01
+      li#modal02play.p-youtube__item 02
+      li#modal03play.p-youtube__item 03
   .l-modal
-    +youtube('joy')
+    +youtube
 
 block page_js
   script(src= PUBLIC_URL + '/js/home.js')

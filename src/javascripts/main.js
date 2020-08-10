@@ -1,6 +1,6 @@
 import './modules/importPug'
 import '../styles/main.scss'
-// import './modules/youtube/loadYoutubeTag'
+import './modules/youtube/loadYoutubeTag'
 
 if (module.hot) {
   module.hot.accept(console.error)
