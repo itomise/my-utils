@@ -2,7 +2,7 @@ My javascript utils
 
 ## install
 ```
-yarn add 
+yarn add https://github.com/itomise/my-utils.git
 ```
 ## Usage
 ```
