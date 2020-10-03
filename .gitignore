@@ -8,3 +8,5 @@ npm-debug.log
 # エディタなどで生成されるファイル
 .idea/
 .DS_Store
+
+htdocs/

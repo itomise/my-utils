@@ -3,7 +3,8 @@
   "author": "Ryota Ito (https://github.com/itomise)",
   "version": "0.0.1",
   "scripts": {
-    "dev": "node ./server.js"
+    "dev": "node ./server.js",
+    "build": "rimraf ./htdocs && webpack --config webpack.prod.js"
   },
   "license": "MIT",
   "dependencies": {

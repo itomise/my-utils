@@ -1,5 +1,5 @@
 import '../styles/parallax.scss'
-import Parallax from './modules/parallax'
+import Parallax from '../../module/smoothParallax'
 import { stateInit } from './modules/state/state'
 
 if (module.hot) {
@@ -11,11 +11,10 @@ if (module.hot) {
 
 const init = () => {
   stateInit()
+  new Parallax('.js_smooth__target', 0.1)
 }
 
-const load = () => {
-  new Parallax()
-}
+const load = () => {}
 
 document.addEventListener('DOMContentLoaded', () => {
   init()

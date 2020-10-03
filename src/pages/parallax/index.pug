@@ -10,36 +10,51 @@ block page_css
   link(rel='stylesheet', href= PUBLIC_URL + '/css/parallax.css')
 
 block content
-  ul.p_list
-    li.p_item
-      h2.p_item__text Lorem ipsum dolor
-      .p_item__img
-        img(src=imgPath+'item01.jpg' alt='')
-    li.p_item
-      h2.p_item__text Consectetur adipiscing
-      .p_item__img
-        img(src=imgPath+'item02.jpg' alt='')
-    li.p_item
-      h2.p_item__text Sed do eiusmod tempor
-      .p_item__img
-        img(src=imgPath+'item03.jpg' alt='')
-    li.p_item
-      h2.p_item__text Labore et dolore magna
-      .p_item__img
-        img(src=imgPath+'item04.jpg' alt='')
-    li.p_item
-      h2.p_item__text Duis aute irure
-      .p_item__img
-        img(src=imgPath+'item05.jpg' alt='')
-    li.p_item
-      h2.p_item__text Voluptate velit
-      .p_item__img
-        img(src=imgPath+'item06.jpg' alt='')
-    li.p_item
-      h2.p_item__text Occaecat cupidatat
-      .p_item__img
-        img(src=imgPath+'item07.jpg' alt='')
-
+  .p_listWrap.js_smooth__target
+    ul.p_list
+      li.p_item
+        h2.p_item__text Lorem ipsum dolor
+        .p_item__img
+          img(src=imgPath+'item01.jpg' alt='' width='640' height='373')
+          .p_item__bg.type01.js_smooth__item
+            .p_item__bgInner
+      li.p_item
+        h2.p_item__text Consectetur adipiscing
+        .p_item__img
+          img(src=imgPath+'item02.jpg' alt='' width='640' height='426')
+          .p_item__bg.type03
+            .p_item__bgInner
+      li.p_item
+        h2.p_item__text Sed do eiusmod tempor
+        .p_item__img
+          img(src=imgPath+'item03.jpg' alt='' width='640' height='426')
+          .p_item__bg.type02
+            .p_item__bgInner
+      li.p_item
+        h2.p_item__text Labore et dolore magna
+        .p_item__img
+          img(src=imgPath+'item04.jpg' alt='' width='640' height='426')
+          .p_item__bg.type04
+            .p_item__bgInner
+      li.p_item
+        h2.p_item__text Duis aute irure
+        .p_item__img
+          img(src=imgPath+'item05.jpg' alt='' width='640' height='369')
+          .p_item__bg.type02
+            .p_item__bgInner
+      li.p_item
+        h2.p_item__text Voluptate velit
+        .p_item__img
+          img(src=imgPath+'item06.jpg' alt='' width='640' height='426')
+          .p_item__bg.type04
+            .p_item__bgInner
+      li.p_item
+        h2.p_item__text Occaecat cupidatat
+        .p_item__img
+          img(src=imgPath+'item07.jpg' alt='' width='640' height='427')
+          .p_item__bg.type02
+            .p_item__bgInner
+  .js_smooth__dummy
 
 block page_js
   script(src= PUBLIC_URL + '/js/parallax.js')

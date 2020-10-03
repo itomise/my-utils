@@ -1,3 +1,3 @@
-import { UserAgent } from './module/userAgent'
-
-export { UserAgent }
+module.exports = {
+  UserAgent: require('./module/userAgent'),
+}
