@@ -1,7 +1,6 @@
-import './modules/youtube/loadYoutubeTag'
-import '../styles/home.scss'
+import '../styles/parallax.scss'
+import Parallax from './modules/parallax'
 import { stateInit } from './modules/state/state'
-import { YoutubeModal } from './modules/youtube'
 
 if (module.hot) {
   module.hot.accept(console.error)
@@ -15,9 +14,7 @@ const init = () => {
 }
 
 const load = () => {
-  new YoutubeModal('5qap5aO4i9A', 'youtube01', '#modal01play')
-  new YoutubeModal('DWcJFNfaw9c', 'youtube02', '#modal02play')
-  new YoutubeModal('rQO8escJC78', 'youtube03', '#modal03play')
+  new Parallax()
 }
 
 document.addEventListener('DOMContentLoaded', () => {

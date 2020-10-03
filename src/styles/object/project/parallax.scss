@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap');
+
+.l_page {
+  background-color: floralwhite;
+}
+.p_item {
+  &:nth-child(2n) {
+    text-align: right;
+  }
+  &+& {
+    padding: 200px 0 0;
+  }
+}
+.p_item__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+  color: dimgrey;
+}
+.p_item__img {
+  padding: 30px 0 0;
+  img {
+    width: 700px;
+  }
+}

@@ -1,0 +1,45 @@
+extends ../../pug_templates/layouts/layout
+include ../../pug_templates/components/youtube
+
+block variables
+  -
+    var title = 'Parallax demo';
+    var imgPath = '../../materials/parallax/'
+
+block page_css
+  link(rel='stylesheet', href= PUBLIC_URL + '/css/parallax.css')
+
+block content
+  ul.p_list
+    li.p_item
+      h2.p_item__text Lorem ipsum dolor
+      .p_item__img
+        img(src=imgPath+'item01.jpg' alt='')
+    li.p_item
+      h2.p_item__text Consectetur adipiscing
+      .p_item__img
+        img(src=imgPath+'item02.jpg' alt='')
+    li.p_item
+      h2.p_item__text Sed do eiusmod tempor
+      .p_item__img
+        img(src=imgPath+'item03.jpg' alt='')
+    li.p_item
+      h2.p_item__text Labore et dolore magna
+      .p_item__img
+        img(src=imgPath+'item04.jpg' alt='')
+    li.p_item
+      h2.p_item__text Duis aute irure
+      .p_item__img
+        img(src=imgPath+'item05.jpg' alt='')
+    li.p_item
+      h2.p_item__text Voluptate velit
+      .p_item__img
+        img(src=imgPath+'item06.jpg' alt='')
+    li.p_item
+      h2.p_item__text Occaecat cupidatat
+      .p_item__img
+        img(src=imgPath+'item07.jpg' alt='')
+
+
+block page_js
+  script(src= PUBLIC_URL + '/js/parallax.js')
