@@ -1,4 +1,4 @@
-class MathUtil {
+class MathUtils {
   /**
    * @param val 変換したい値
    * @param fromMin 変換前の最小値
@@ -29,4 +29,4 @@ class MathUtil {
 
 }
 
-export { MathUtil }
+export { MathUtils }

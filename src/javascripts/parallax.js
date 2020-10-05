@@ -11,10 +11,17 @@ if (module.hot) {
 
 const init = () => {
   stateInit()
-  new Parallax('.js_smooth__target', 0.1)
 }
 
-const load = () => {}
+const load = () => {
+  new Parallax('.js_smooth__target', 0.1, [
+    {
+      wrap: '.js_smooth__item',
+      min: -200,
+      max: 200,
+    },
+  ])
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   init()

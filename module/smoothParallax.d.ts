@@ -1,13 +1,18 @@
+declare type ContentType = {
+    wrap: string;
+    min: number;
+    max: number;
+    isRandom?: boolean;
+};
 declare class SmoothParallax {
     target: HTMLInputElement;
     dummy: HTMLInputElement | HTMLElement;
-    currentTargetHeight: number;
     docY: number;
     lerpY: number;
-    amount: number;
+    ease: number;
     reqId: number;
     items: Item[];
-    constructor(target: string, amount: number, contents?: [], dummy?: string);
+    constructor(target: string, ease: number, contents?: ContentType[], dummy?: string);
     static getPageYScroll: () => number;
     style: () => void;
     onScroll: () => number;
@@ -16,10 +21,13 @@ declare class SmoothParallax {
     destroy: () => void;
 }
 declare class Item {
-    ele: HTMLInputElement;
-    startVal: number;
-    endVal: number;
-    constructor(ele: HTMLInputElement);
-    update: (scrollVal: number) => void;
+    wrap: HTMLInputElement;
+    min: number;
+    max: number;
+    winHeight: number;
+    isVisible: boolean;
+    constructor(wrap: HTMLInputElement, min: number, max: number, isRandom?: boolean);
+    update: () => void;
+    reset: () => void;
 }
 export default SmoothParallax;
